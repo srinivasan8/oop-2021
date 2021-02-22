@@ -19,7 +19,7 @@
   As mentioned before, the bytecode's format is agreed upon by most platform and most programming language. Suppose we have M programming languages and N platforms and each compiler needs to be platform-specific and language-specific, this means we need approximately M*N compilers. Meanwhile, bytecodes are platform-independent. This means, we can have M 'front-end' compilers that translates the language into bytecodes and N 'back-end' compilers that translates the bytecode into machine code, in total M+N compilers.
   Another advantage of compiling into bytecode first is that the problem of the compilation process can be divided into two parts which is parsing the language(mostly) and some other stuff, and the other part is back-end stuff like processor design, instruction set, etc.
   The bytecode that has been produced in the end of the compilation process by javac is then passed on to the JVM for further processing. There are 3 big steps involved inside JVM:
-  1. Loading: loads the .class file(s) generated
+  1. [Loading](https://www.baeldung.com/java-classloaders): loads the .class file(s) generated
       1. Bootstrap Class Loader: not a class, only a piece of code that is written in C/C++ to initialize all default classes in java.util and java.lang.
       2. Extension Class Loader: implemented as a class in Java. Loads all extension classes (classes that inherits from another class, most likely default classes)
       3. Application Class Loader: also implemented as a class in Java. Loads all classes that you define yourself or you include from a library.
