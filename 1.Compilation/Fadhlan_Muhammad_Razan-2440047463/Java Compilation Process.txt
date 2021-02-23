@@ -1,6 +1,0 @@
-What I have learnt about Java Compilation Process:
-
-We write the java code in a file with the .java extension.
-When we then execute the program/file, it is going to be compiled by java compiler into a java bytecode file with the .class extension.
-After that, the file is going to be passed to the Java Virtual Machine (JVM).
-JVM is then going to interpret the java bytecode into machine language so that the computer can understand the code and then produces outputs based on the code.
